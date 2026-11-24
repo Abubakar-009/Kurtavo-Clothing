@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Kurtavo Clothing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Young+Serif&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER / NAVIGATION (same on every page) ========== -->
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="logo" href="index.html">Kurtavo<span>.</span></a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle menu">
+      <label for="nav-toggle" class="nav-button">Menu</label>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="size-guide.html">Size Guide</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ========== PAGE HEADER ========== -->
+  <section class="page-header">
+    <div class="wrap"><h1>Get in touch with us</h1></div>
+  </section>
+
+  <main class="section">
+    <div class="wrap two-col" style="align-items:start">
+
+      <!-- ========== CUSTOMER SUPPORT FORM ========== -->
+      <section>
+        <h2>Customer support form</h2>
+        <form class="contact-form" action="#" method="post" novalidate>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name">
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+
+          <label for="inquiry">Inquiry</label>
+          <textarea id="inquiry" name="inquiry" rows="5"></textarea>
+
+          <button class="btn" type="submit">Send message</button>
+        </form>
+      </section>
+
+      <!-- ========== STORE INFORMATION + MAP ========== -->
+      <section class="info-box">
+        <h2>Store information</h2>
+        <p><strong>Address:</strong> Main Boulevard, Rawalpindi</p>
+        <p><strong>Phone:</strong> +92-300-1234567</p>
+        <p><strong>Hours:</strong> 11 AM to 10 PM</p>
+        <div class="map-box">Embedded map goes here</div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ========== FOOTER (same on every page) ========== -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <h3>Newsletter</h3>
+          <form class="newsletter" action="#">
+            <input type="email" id="news-email" placeholder="Your email" aria-label="Email for newsletter">
+            <button class="btn btn-small" type="submit">Sign up</button>
+          </form>
+        </div>
+        <div>
+          <h3>Follow us</h3>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">WhatsApp</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Store policies</h3>
+          <ul>
+            <li><a href="#">Delivery</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Clothing care</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">&copy; 2026 Kurtavo Clothing, Rawalpindi.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

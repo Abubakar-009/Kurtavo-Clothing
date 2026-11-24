@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Size Guide | Kurtavo Clothing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Young+Serif&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER / NAVIGATION (same on every page) ========== -->
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="logo" href="index.html">Kurtavo<span>.</span></a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle menu">
+      <label for="nav-toggle" class="nav-button">Menu</label>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="size-guide.html" class="active">Size Guide</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ========== PAGE HEADER ========== -->
+  <section class="page-header">
+    <div class="wrap"><h1>Find your perfect fit</h1></div>
+  </section>
+
+  <main class="section">
+    <div class="wrap guide-layout">
+
+      <!-- ========== SIZE CHART WITH TABS (Men / Women / Kids) ========== -->
+      <section class="tabs">
+        <input type="radio" name="tab" id="tab-men" checked>
+        <input type="radio" name="tab" id="tab-women">
+        <input type="radio" name="tab" id="tab-kids">
+        <div class="tab-labels">
+          <label for="tab-men">Men</label>
+          <label for="tab-women">Women</label>
+          <label for="tab-kids">Kids</label>
+        </div>
+
+        <div class="tab-panel" id="panel-men">
+          <h2>Men's measurements</h2>
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th>Size</th><th>Chest</th><th>Waist</th><th>Length</th></tr></thead>
+              <tbody>
+                <tr><td>Small</td><td>36-38 in (91-97 cm)</td><td>30-32 in (76-81 cm)</td><td>28 in (71 cm)</td></tr>
+                <tr><td>Medium</td><td>40-42 in (102-107 cm)</td><td>34-36 in (86-91 cm)</td><td>29 in (74 cm)</td></tr>
+                <tr><td>Large</td><td>44-46 in (112-117 cm)</td><td>38-40 in (97-102 cm)</td><td>30 in (76 cm)</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="tab-panel" id="panel-women">
+          <h2>Women's measurements</h2>
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th>Size</th><th>Bust</th><th>Waist</th><th>Length</th></tr></thead>
+              <tbody>
+                <tr><td>Small</td><td>34-36 in (86-91 cm)</td><td>28-30 in (71-76 cm)</td><td>38 in (97 cm)</td></tr>
+                <tr><td>Medium</td><td>38-40 in (97-102 cm)</td><td>32-34 in (81-86 cm)</td><td>39 in (99 cm)</td></tr>
+                <tr><td>Large</td><td>42-44 in (107-112 cm)</td><td>36-38 in (91-97 cm)</td><td>40 in (102 cm)</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="tab-panel" id="panel-kids">
+          <h2>Kids' measurements</h2>
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th>Age</th><th>Chest</th><th>Waist</th><th>Length</th></tr></thead>
+              <tbody>
+                <tr><td>4-6 years</td><td>23-25 in (58-64 cm)</td><td>22-23 in (56-58 cm)</td><td>20 in (51 cm)</td></tr>
+                <tr><td>7-9 years</td><td>26-28 in (66-71 cm)</td><td>23-25 in (58-64 cm)</td><td>23 in (58 cm)</td></tr>
+                <tr><td>10-12 years</td><td>29-31 in (74-79 cm)</td><td>25-27 in (64-69 cm)</td><td>26 in (66 cm)</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== HOW TO MEASURE TIP ========== -->
+      <aside class="tip">
+        <h3>How to measure yourself</h3>
+        <p>Chest: wrap a tape around the fullest part of your chest, under the arms.</p>
+        <p>Waist: measure around your natural waistline.</p>
+        <p>Length: measure from the top of the shoulder down to where you want the hem.</p>
+        <p>Between two sizes? Choose the larger one.</p>
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- ========== FOOTER (same on every page) ========== -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <h3>Newsletter</h3>
+          <form class="newsletter" action="#">
+            <input type="email" id="news-email" placeholder="Your email" aria-label="Email for newsletter">
+            <button class="btn btn-small" type="submit">Sign up</button>
+          </form>
+        </div>
+        <div>
+          <h3>Follow us</h3>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">WhatsApp</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Store policies</h3>
+          <ul>
+            <li><a href="#">Delivery</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Clothing care</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">&copy; 2026 Kurtavo Clothing, Rawalpindi.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
