@@ -1,11 +1,3 @@
-/* ==========================================================
-   Kurtavo Clothing - shared stylesheet (used by all 5 pages)
-   Sections: 1 Colours/fonts | 2 Base | 3 Header/nav | 4 Buttons
-             5 Home | 6 Shop | 7 Size guide | 8 About | 9 Contact
-             10 Footer | 11 Responsive
-   ========================================================== */
-
-/* 1. COLOURS AND FONTS - change these to re-theme the site */
 :root {
   --ink: #14161F;
   --indigo: #2E2E2E;
@@ -18,7 +10,7 @@
   --font-body: "DM Sans", Arial, sans-serif;
 }
 
-/* 2. BASE */
+
 * {
   box-sizing: border-box;
 }
@@ -87,7 +79,7 @@ a {
   outline-offset: 2px;
 }
 
-/* 3. HEADER AND NAVIGATION */
+
 .site-header {
   background: var(--white);
   border-bottom: 1px solid var(--line);
@@ -147,7 +139,7 @@ a {
 
 /* mobile menu button, see section 11 */
 
-/* 4. BUTTONS */
+
 .btn {
   display: inline-block;
   background: var(--marigold);
@@ -171,7 +163,7 @@ a {
   font-size: .9rem;
 }
 
-/* 5. HOME PAGE */
+
 .hero {
   background: var(--ink);
   color: var(--white);
@@ -222,21 +214,6 @@ a {
 }
 
 /* 6. SHOP PAGE (also used for Trending products on Home) */
-<<<<<<< HEAD
-.shop-layout { display: grid; grid-template-columns: 240px 1fr; gap: 2rem; align-items: start; }
-.filters { background: var(--white); border: 1px solid var(--line); border-radius: 4px; padding: 1.25rem; }
-.filters label { display: block; font-weight: 700; margin: 1rem 0 .3rem; }
-.filters label:first-of-type { margin-top: 0; }
-.filters select { width: 100%; padding: .5rem; font: inherit; border: 1px solid var(--line); border-radius: 4px; background: var(--white); }
-.product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1.25rem; }
-.product-card { background: var(--white); border: 1px solid var(--line); border-radius: 4px; overflow: hidden; display: flex; flex-direction: column; }
-.product-card .thumb { aspect-ratio: 4 / 5; background: var(--line); display: flex; align-items: center; justify-content: center; color: var(--muted); font-size: .9rem; } /* replace with <img> later */
-.product-card .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.product-card .info { padding: 1rem; }
-.product-card h3 { margin-bottom: .2rem; }
-.product-card .sizes { color: var(--muted); font-size: .9rem; margin-bottom: .5rem; }
-.price { font-weight: 700; margin-bottom: .75rem; }
-=======
 .shop-layout {
   display: grid;
   grid-template-columns: 240px 1fr;
@@ -296,6 +273,13 @@ a {
 }
 
 /* replace with <img> later */
+.product-card .thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .product-card .info {
   padding: 1rem;
 }
@@ -314,7 +298,6 @@ a {
   font-weight: 700;
   margin-bottom: .75rem;
 }
->>>>>>> ba8c6ef5bb048e9dc7361c3b7260244aa2fcb429
 
 /* 7. SIZE GUIDE PAGE */
 .guide-layout {
@@ -407,6 +390,7 @@ th {
 }
 
 .photo-box {
+  aspect-ratio: 4 / 3;
   background: var(--line);
   border-radius: 4px;
   display: flex;
